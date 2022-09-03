@@ -7,11 +7,17 @@ using ListStackQueue.jimmy.IList;
 
 var myList = new ListStackQueue.jimmy.List.List<int>(2); // list of 2 items 
 
+//adding working fine
 myList.Add(1);
 myList.Add(2);
 myList.Add(3);
 myList.Add(4);
 myList.Add(5);
+
+//testing removing 
+//working ✅
+myList.Remove(2);
+myList.Remove(1);
 
 //working fine ✅
 for(int i = 0 ; i < myList.Size() ; i ++){
