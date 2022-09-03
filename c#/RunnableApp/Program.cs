@@ -16,8 +16,11 @@ myList.Add(5);
 
 //testing removing 
 //working ✅
-myList.Remove(2);
-myList.Remove(1);
+// myList.Remove(2);
+// myList.Remove(1);
+
+//inserting working
+myList.Insert(3, 100);
 
 //working fine ✅
 for(int i = 0 ; i < myList.Size() ; i ++){
