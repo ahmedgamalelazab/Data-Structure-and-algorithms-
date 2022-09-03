@@ -20,7 +20,10 @@ myList.Add(5);
 // myList.Remove(1);
 
 //inserting working
-myList.Insert(3, 100);
+// myList.Insert(3, 100);
+
+myList.UpdateElementAt(1, 100);
+myList.UpdateElement(4,500);
 
 //working fine ✅
 for(int i = 0 ; i < myList.Size() ; i ++){
