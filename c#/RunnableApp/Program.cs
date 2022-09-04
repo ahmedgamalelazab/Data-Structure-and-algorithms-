@@ -1,18 +1,22 @@
 ﻿
 
 
+
+
+using System.Data;
+
 #region  Testing Jimmy.List
 
 using ListStackQueue.jimmy.IList;
 
-var myList = new ListStackQueue.jimmy.List.List<int>(2); // list of 2 items 
+// var myList = new ListStackQueue.jimmy.List.List<int>(2); // list of 2 items 
 
 //adding working fine
-myList.Add(1);
-myList.Add(2);
-myList.Add(3);
-myList.Add(4);
-myList.Add(5);
+// myList.Add(1);
+// myList.Add(2);
+// myList.Add(3);
+// myList.Add(4);
+// myList.Add(5);
 
 //testing removing 
 //working ✅
@@ -30,12 +34,30 @@ myList.Add(5);
 //     Console.WriteLine(myList.Get(i));
 // }
 
+//
+// foreach (var elem in myList.Where(e=>e > 3))
+// {
+//     Console.WriteLine(elem);
+// }
 
-foreach (var elem in myList.Where(e=>e > 3))
-{
-    Console.WriteLine(elem);
-}
 
 
+#endregion
+
+
+#region Testing Binary search tree
+
+using TreesDataStructure;
+
+var tree = new TreesDataStructure.Tree<int>();
+
+
+tree.insert(55);
+tree.insert(40);
+tree.insert(80);
+tree.insert(20);
+tree.insert(45);
+
+tree.Print();
 
 #endregion

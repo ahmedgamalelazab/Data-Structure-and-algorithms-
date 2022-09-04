@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RunnableApp", "RunnableApp\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ListStackQueue", "ListStackQueue\ListStackQueue.csproj", "{DB3F9A71-0448-46D6-B15B-D499581184EC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TreesDataStructure", "TreesDataStructure\TreesDataStructure.csproj", "{D326FE66-5467-4A70-8C80-3FC23AED268E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{DB3F9A71-0448-46D6-B15B-D499581184EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DB3F9A71-0448-46D6-B15B-D499581184EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DB3F9A71-0448-46D6-B15B-D499581184EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D326FE66-5467-4A70-8C80-3FC23AED268E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D326FE66-5467-4A70-8C80-3FC23AED268E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D326FE66-5467-4A70-8C80-3FC23AED268E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D326FE66-5467-4A70-8C80-3FC23AED268E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

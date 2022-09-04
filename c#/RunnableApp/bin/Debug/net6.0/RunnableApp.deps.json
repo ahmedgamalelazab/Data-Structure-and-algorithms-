@@ -8,7 +8,8 @@
     ".NETCoreApp,Version=v6.0": {
       "RunnableApp/1.0.0": {
         "dependencies": {
-          "ListStackQueue": "1.0.0"
+          "ListStackQueue": "1.0.0",
+          "TreesDataStructure": "1.0.0"
         },
         "runtime": {
           "RunnableApp.dll": {}
@@ -17,6 +18,11 @@
       "ListStackQueue/1.0.0": {
         "runtime": {
           "ListStackQueue.dll": {}
+        }
+      },
+      "TreesDataStructure/1.0.0": {
+        "runtime": {
+          "TreesDataStructure.dll": {}
         }
       }
     }
@@ -28,6 +34,11 @@
       "sha512": ""
     },
     "ListStackQueue/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "TreesDataStructure/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
