@@ -6,21 +6,26 @@ module.exports= {
     BinarySearchTree : class BinaryTree {
         
         constructor(){
-            this.root = null;
+           
         }
 
         insert(data){
-            this.root = insert(data , this.root);
+            root = insert(data , root);
         }
 
         print(){
-            print(this.root);
+            print(root);
         }
     }
 
 
 
 }
+
+/**
+ * @type {BinaryNode}
+ */
+var root  = null;
 
 class BinaryNode {
 
