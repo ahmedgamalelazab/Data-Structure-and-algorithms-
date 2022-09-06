@@ -10,6 +10,9 @@ tree.insert(80);
 tree.insert(20);
 tree.insert(45);
 
+tree.Remove(55);
+tree.Remove(80);
+
 tree.print();
 
 

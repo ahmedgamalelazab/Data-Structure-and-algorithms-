@@ -18,7 +18,7 @@ module.exports= {
         }
 
         Remove(element){
-            Remove(element , root);
+            root = Remove(element , root);
         }
     }
 
