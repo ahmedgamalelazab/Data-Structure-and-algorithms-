@@ -16,6 +16,10 @@ module.exports= {
         print(){
             print(root);
         }
+
+        Remove(element){
+            Remove(element , root);
+        }
     }
 
 
@@ -55,6 +59,46 @@ function insert(data , node){
     }
     return node;
 }
+
+//deleting Node from the tree 
+
+/**
+ * 
+ * @param {any} element 
+ * @param {BinaryNode} t 
+ */
+function Remove(element , t){
+
+    if(t === null){
+        return t;
+    }
+
+    if(element < t.data){
+        t.left = Remove(element , t.left);
+    }else if(element > t.data){
+        t.right = Remove(element , t.right);
+    }else if(t.left != null && t.right !=null){
+        t.data = FindMin(t.right).data;
+        t.right = Remove(t.data , t.right);
+    }else 
+        t = (t.left != null) ? t.left : t.right;
+    return t;
+}
+
+/**
+ * 
+ * @param {BinaryNode} t 
+ */
+function FindMin(t){
+    if(t == null){
+        return t;
+    }
+    while(t.left != null){
+        t = t.left;
+    }
+    return t;
+}
+
 
 /**
  * 
