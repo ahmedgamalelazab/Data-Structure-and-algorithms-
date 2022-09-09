@@ -66,13 +66,13 @@ function insert(data , node){
  * 
  * @param {any} element 
  * @param {BinaryNode} t 
+ * @returns {BinaryNode}
  */
 function Remove(element , t){
 
     if(t === null){
         return t;
     }
-
     if(element < t.data){
         t.left = Remove(element , t.left);
     }else if(element > t.data){
