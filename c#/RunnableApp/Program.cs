@@ -9,6 +9,8 @@ using System.Data;
 
 using ListStackQueue.jimmy.IList;
 
+using SortingAlgorithms;
+
 // var myList = new ListStackQueue.jimmy.List.List<int>(2); // list of 2 items 
 
 //adding working fine
@@ -47,6 +49,7 @@ using ListStackQueue.jimmy.IList;
 
 #region Testing Binary search tree
 
+/*
 using TreesDataStructure;
 
 var tree = new TreesDataStructure.Tree<int>();
@@ -61,6 +64,18 @@ tree.insert(45);
 tree.Remove(55);
 tree.Remove(80);
 tree.Print();
-// Console.WriteLine(tree.FindMin());
+*/
+#endregion
+
+
+#region sorting algorithms
+
+var arr = new List<int> { 3, 2, 1 };
+
+QuickSort.Sort(arr, (a, b) => a < b).ForEach((item) =>
+{
+    Console.WriteLine(item);
+});
+
 
 #endregion

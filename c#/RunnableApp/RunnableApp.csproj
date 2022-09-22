@@ -3,6 +3,7 @@
   <ItemGroup>
     <ProjectReference Include="..\ListStackQueue\ListStackQueue.csproj" />
     <ProjectReference Include="..\TreesDataStructure\TreesDataStructure.csproj" />
+    <ProjectReference Include="..\SortingAlgorithms\SortingAlgorithms.csproj" />
   </ItemGroup>
 
   <PropertyGroup>
