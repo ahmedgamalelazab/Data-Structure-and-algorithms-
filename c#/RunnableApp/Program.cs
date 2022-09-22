@@ -72,6 +72,7 @@ tree.Print();
 
 var arr = new List<int> { 3, 2, 1 };
 
+
 QuickSort.Sort(arr, (a, b) => a < b).ForEach((item) =>
 {
     Console.WriteLine(item);
