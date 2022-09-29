@@ -16,7 +16,7 @@
  tree.print();
  * 
  */
-
+/*
 const { search } = require("./Divide and Conquer/BinraySearchTree");
 const { findMax } = require("./Divide and Conquer/findMaxNumber");
 const { findMaximumV2 } = require("./Divide and Conquer/findMaximumV2");
@@ -28,3 +28,25 @@ console.log(findMaximumV2([...arr]));
 console.log(arr);
 
 // console.log(search(arr, 100, 0, arr.length - 1));
+*/
+
+const { BinrayHeap } = require("./Binary heaps/BinrayHeaps");
+
+const bh = new BinrayHeap();
+
+bh.insert(44);
+bh.insert(100);
+bh.insert(55);
+bh.insert(35);
+bh.insert(32);
+bh.insert(25);
+
+bh.print();
+
+let extractedItem = bh.extract();
+
+console.log("the extracted item from the heap", extractedItem);
+
+console.log("the heap after the extraction is : ");
+
+bh.print();
