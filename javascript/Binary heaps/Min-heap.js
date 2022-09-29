@@ -21,6 +21,13 @@ class BinrayHeap {
   }
 
   /**
+   * @returns {boolean}
+   */
+  isEmpty() {
+    return size === 0;
+  }
+
+  /**
    * @returns {any}
    */
   extract() {

@@ -53,22 +53,48 @@ console.log(arr);
 
 // bh.print();
 
-const { MaxHeap } = require("./Binary heaps/Max-heap");
+// const { MaxHeap } = require("./Binary heaps/Max-heap");
 
-const mh = new MaxHeap();
+// const mh = new MaxHeap();
 
-mh.insert(20);
-mh.insert(55);
-mh.insert(78);
-mh.insert(22);
-mh.insert(1);
-mh.insert(100);
+// mh.insert(20);
+// mh.insert(55);
+// mh.insert(78);
+// mh.insert(22);
+// mh.insert(1);
+// mh.insert(100);
 
-let ex = null;
-ex = mh.extract();
-ex = mh.extract();
-ex = mh.extract();
+// let ex = null;
+// ex = mh.extract();
+// ex = mh.extract();
+// ex = mh.extract();
 
-console.log("the item that has been extracted is : ", ex);
+// console.log("the item that has been extracted is : ", ex);
 
-mh.print();
+// mh.print();
+
+// const { PriorityCallbacks } = require("./PriorityHeap/PriorityHeaps");
+
+// const priotityCallbacks = new PriorityCallbacks();
+
+// priotityCallbacks.on(1, () => {
+//   console.log("callback has been called with priority : ", 1);
+// });
+
+// priotityCallbacks.on(2, () => {
+//   console.log("callback has been called with priority : ", 2);
+// });
+
+// priotityCallbacks.on(10, () => {
+//   console.log("callback has been called with priority : ", 10);
+// });
+
+// priotityCallbacks.on(10, () => {
+//   console.log("callback has been called with priority : ", 10);
+// });
+
+// priotityCallbacks.on(9, () => {
+//   console.log("callback has been called with priority : ", 9);
+// });
+
+// priotityCallbacks.emit();

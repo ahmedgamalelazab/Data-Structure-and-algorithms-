@@ -21,6 +21,14 @@ class MaxHeap {
   }
 
   /**
+   *
+   * @returns {boolean}
+   */
+  isEmpty() {
+    return size === 0;
+  }
+
+  /**
    * @returns {any}
    */
   extract() {
@@ -43,6 +51,11 @@ function initilizeHeap() {
  * @param {[]} arr
  */
 function insert(value, arr) {
+  if (arr === null) {
+    arr = [];
+    arr[0] = null;
+    size = 0;
+  }
   if (arr !== null) {
     arr.push(value);
     size++;
@@ -53,6 +66,12 @@ function insert(value, arr) {
 }
 
 function extract() {
+  if (size === 1) {
+    let itemToExtract = arr[size];
+    arr = null;
+    size = 0;
+    return itemToExtract;
+  }
   if (arr !== null) {
     let extractedItem = arr[1];
     arr[1] = arr[size];
@@ -61,7 +80,8 @@ function extract() {
     return extractedItem;
   } else {
     //do nothing , the array is null
-    return -1;
+    console.log("cannot extracting empty array");
+    throw new Error("the binary heap is null");
   }
 }
 
