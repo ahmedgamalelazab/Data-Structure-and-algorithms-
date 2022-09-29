@@ -30,23 +30,45 @@ console.log(arr);
 // console.log(search(arr, 100, 0, arr.length - 1));
 */
 
-const { BinrayHeap } = require("./Binary heaps/BinrayHeaps");
+// const { BinrayHeap } = require("./Binary heaps/Min-heap");
 
-const bh = new BinrayHeap();
+// const bh = new BinrayHeap();
 
-bh.insert(44);
-bh.insert(100);
-bh.insert(55);
-bh.insert(35);
-bh.insert(32);
-bh.insert(25);
+// bh.insert(44);
+// bh.insert(100);
+// bh.insert(55);
+// bh.insert(35);
+// bh.insert(32);
+// bh.insert(25);
 
-bh.print();
+// bh.print();
 
-let extractedItem = bh.extract();
+// let extractedItem = null;
 
-console.log("the extracted item from the heap", extractedItem);
+// extractedItem = bh.extract();
 
-console.log("the heap after the extraction is : ");
+// console.log("the extracted item from the heap", extractedItem);
 
-bh.print();
+// console.log("the heap after the extraction is : ");
+
+// bh.print();
+
+const { MaxHeap } = require("./Binary heaps/Max-heap");
+
+const mh = new MaxHeap();
+
+mh.insert(20);
+mh.insert(55);
+mh.insert(78);
+mh.insert(22);
+mh.insert(1);
+mh.insert(100);
+
+let ex = null;
+ex = mh.extract();
+ex = mh.extract();
+ex = mh.extract();
+
+console.log("the item that has been extracted is : ", ex);
+
+mh.print();
