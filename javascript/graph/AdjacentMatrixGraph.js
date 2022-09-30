@@ -83,7 +83,7 @@ class Graph {
     if (!vertice.isVisited()) {
       queue.push(vertice);
       while (queue.length !== 0) {
-        let currentV = queue.shift();
+        let currentV = queue.shift(); // running time o(N) for shifting the elements , i will fix that later
         if (!currentV.isVisited()) {
           currentV.setVisited(true);
         }
