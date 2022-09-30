@@ -29,6 +29,7 @@ class GraphNode {
     this.#name = name;
     this.#index = index;
     this.#visited = false;
+    this.#neighbors = [];
   }
 
   getName() {

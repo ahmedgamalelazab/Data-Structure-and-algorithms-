@@ -46,8 +46,40 @@ class Graph {
   bsf() {
     this.#graphVertices.forEach((v) => {
       if (!v.isVisited()) {
-        this.visit(v);
+        this.visitBFS(v);
       }
+    });
+  }
+
+  dfs() {
+    this.#graphVertices.forEach((v) => {
+      if (!v.isVisited()) {
+        this.visitDFS(v);
+      }
+    });
+  }
+
+  /**
+   *
+   * @param {GraphNode} vertice
+   */
+  visitDFS(vertice) {
+    //setup the base case
+    if (!vertice.isVisited()) {
+      vertice.setVisited(true);
+      console.log(`Node ${vertice.getName()} is being visited`);
+      let neighbors = this.getGraphVerticeNeighbors(vertice);
+      neighbors.forEach((nv) => {
+        this.visitDFS(nv);
+      });
+    } else {
+      return;
+    }
+  }
+
+  reset() {
+    this.#graphVertices.forEach((v) => {
+      v.setVisited(false);
     });
   }
 
@@ -75,7 +107,7 @@ class Graph {
    *
    * @param {GraphNode} vertice
    */
-  visit(vertice) {
+  visitBFS(vertice) {
     /**
      * @type {[GraphNode]}
      */
@@ -86,6 +118,7 @@ class Graph {
         let currentV = queue.shift(); // running time o(N) for shifting the elements , i will fix that later
         if (!currentV.isVisited()) {
           currentV.setVisited(true);
+          console.log(`Node : ${currentV.getName()} is being visited`);
         }
         let verticeNeighbors = this.getGraphVerticeNeighbors(currentV);
         verticeNeighbors.forEach((nv) => {

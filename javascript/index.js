@@ -125,4 +125,17 @@ g.addUndirectedEdge(4, 3);
 
 // g.printGraphModel();
 
+console.log("..........................................................");
+//this is the breadth first search algorithm
+console.log("BFS ....");
 g.bsf();
+
+console.log("..........................................................");
+console.log("resetting");
+console.log("..........................................................");
+//reset the graph vertices
+g.reset();
+
+console.log("..........................................................");
+console.log("NOW DFS ....");
+g.dfs();
