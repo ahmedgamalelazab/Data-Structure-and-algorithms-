@@ -98,3 +98,31 @@ console.log(arr);
 // });
 
 // priotityCallbacks.emit();
+
+let { GraphNode } = require("./graph/GraphNode");
+
+const { Graph } = require("./graph/AdjacentMatrixGraph");
+
+let GraphVertices = [
+  new GraphNode("A", 0),
+  new GraphNode("B", 1),
+  new GraphNode("C", 2),
+  new GraphNode("D", 3),
+  new GraphNode("E", 4),
+];
+
+let g = new Graph(GraphVertices);
+
+g.addUndirectedEdge(0, 1);
+g.addUndirectedEdge(0, 2);
+g.addUndirectedEdge(1, 0);
+g.addUndirectedEdge(1, 4);
+g.addUndirectedEdge(2, 0);
+g.addUndirectedEdge(2, 3);
+g.addUndirectedEdge(3, 2);
+g.addUndirectedEdge(3, 4);
+g.addUndirectedEdge(4, 3);
+
+// g.printGraphModel();
+
+g.bsf();
