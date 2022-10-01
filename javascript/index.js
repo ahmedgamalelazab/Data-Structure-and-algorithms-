@@ -123,7 +123,7 @@ g.addUndirectedEdge(3, 2);
 g.addUndirectedEdge(3, 4);
 g.addUndirectedEdge(4, 3);
 
-// g.printGraphModel();
+g.printGraphModel();
 
 console.log("..........................................................");
 //this is the breadth first search algorithm
@@ -139,3 +139,27 @@ g.reset();
 console.log("..........................................................");
 console.log("NOW DFS ....");
 g.dfs();
+
+const { AdjacentListGraph } = require("./graph/AdjacentListGraph");
+
+const ag = new AdjacentListGraph(GraphVertices);
+
+ag.setUndirectedEdge(0, 1);
+ag.setUndirectedEdge(0, 2);
+// ag.setUndirectedEdge(1, 0);
+ag.setUndirectedEdge(1, 4);
+// ag.setUndirectedEdge(2, 0);
+ag.setUndirectedEdge(2, 3);
+// ag.setUndirectedEdge(3, 2);
+ag.setUndirectedEdge(3, 4);
+// ag.setUndirectedEdge(4, 3);
+
+ag.printGraphModel();
+
+ag.reset();
+
+console.log("Printing the DFS FOR adjacent list graph model");
+ag.dfs();
+ag.reset();
+console.log("Printing the BFS FOR adjacent list graph model");
+ag.bfs();
