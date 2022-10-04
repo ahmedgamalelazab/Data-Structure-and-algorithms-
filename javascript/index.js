@@ -163,3 +163,7 @@ ag.dfs();
 ag.reset();
 console.log("Printing the BFS FOR adjacent list graph model");
 ag.bfs();
+
+const { canFinish } = require("./graph/TopologicalSort");
+
+var result = canFinish(2, [[1, 0]]);
